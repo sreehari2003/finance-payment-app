@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050081315473",
+    "project_id": "finance-flutter",
+    "storage_bucket": "finance-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050081315473:android:399e71ede0cb88606ecd30",
+        "android_client_info": {
+          "package_name": "com.hari03.pofato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050081315473-kik0m0urlslfssq1piboejq8uli0uh2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF4EwhcX0G3T8PNdWIrzyTzM13lm0--YI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050081315473-kik0m0urlslfssq1piboejq8uli0uh2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,6 +4,8 @@
 
 [Design](https://dribbble.com/shots/18306272-Finance-Payment-App)
 
+![screenshot](./assets/sc.jpg)
+
 A new Flutter project.
 
 ## Getting Started

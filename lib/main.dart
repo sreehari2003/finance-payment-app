@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import "./home//home.dart";
-import "./constants/colors.dart";
+import "package:pofato/home/home.dart";
+import "package:pofato/constants/colors.dart";
 
 void main() {
   runApp(const MyApp());

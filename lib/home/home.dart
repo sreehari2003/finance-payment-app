@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             color: const Color.fromARGB(255, 23, 92, 84),
@@ -29,6 +30,50 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            padding: const EdgeInsets.only(top: 10, left: 20),
+            color: Color(0xFFfaedcd),
+            // height: 20,
+            width: double.infinity,
+            child: const Text(
+              "Menu",
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            color: Color(0xFFfaedcd),
+            // height: 200,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    menuIconInfo(Icons.ac_unit, "Topup"),
+                    menuIconInfo(Icons.card_giftcard, "Card"),
+                    menuIconInfo(Icons.paste_sharp, "Pay bills")
+                  ],
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    menuIconInfo(Icons.transit_enterexit_outlined, "Transac"),
+                    menuIconInfo(Icons.save, "Savings"),
+                    menuIconInfo(Icons.share, "Sharing")
+                  ],
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
@@ -75,4 +120,17 @@ Widget cardInfo(IconData icon, String txt, double price) {
         trailing: Text("\$$price",
             style: const TextStyle(color: Colors.white, fontSize: 16)),
       ));
+}
+
+Widget menuIconInfo(IconData ic, String txt) {
+  return Container(
+    color: Colors.white,
+    margin: EdgeInsets.all(2),
+    padding: EdgeInsets.all(10),
+    height: 80,
+    width: 80,
+    child: Column(
+      children: [Icon(ic), Text(txt)],
+    ),
+  );
 }
